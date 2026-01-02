@@ -1,39 +1,28 @@
-# Osayl Resume – DevOps Portfolio
+# Personal Portfolio – Osayl Hamed
 
-Personal resume & portfolio website built with **React** and deployed as a
-**production-ready application** using **Docker**, **GitHub Actions CI/CD**,
-and **Oracle Cloud VM**.
+Modern responsive portfolio website built with React.
 
-Live site: http://151.145.93.131/
+## 🚀 Features
+- Dark / Light theme toggle
+- Projects showcase
+- Skills & DevOps section
+- Responsive design
+- Dockerized deployment
 
----
-
-## 🛠 Tech Stack
-
-### Frontend
-- React (Create React App)
-- JavaScript (ES6)
+## 🛠️ Tech Stack
+- React
+- JavaScript (ES6+)
 - HTML5 / CSS3
-
-### DevOps & Infrastructure
-- Docker (multi-stage, multi-architecture)
+- Docker
 - GitHub Actions (CI/CD)
-- Docker Hub
-- Oracle Cloud VM (Linux, ARM)
-- Linux & SSH
-- **Cron daemon (scheduled automation)**
+- Oracle Cloud (Deployment)
 
----
+## 📂 Projects
+- Velocity Viper – Car survival game
+- Blood Pressure Monitoring System
+- Attendance Clock System
 
-## 🚀 CI/CD Pipeline
-
-The project uses a full CI/CD pipeline:
-
-1. Code pushed to GitHub
-2. GitHub Actions workflow triggered
-3. Dependencies installed and React app built
-4. Docker image built (multi-stage)
-5. Multi-architecture image (amd64 / arm64) pushed to Docker Hub
-6. Deployment to Oracle Cloud VM via SSH
-7. Application served using Nginx
-
+## 🐳 Docker
+```bash
+docker build -t portfolio .
+docker run -p 3000:80 portfolio
